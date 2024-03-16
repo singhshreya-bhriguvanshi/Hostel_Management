@@ -1,0 +1,63 @@
+html{
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #333;
+  background-image: url('https://nith.ac.in/uploads/topics/hostelphoto16442124065939.jpg');
+  background-size: cover; 
+  backdrop-filter: blur(5px);
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.container {
+  width: 500px;
+  /* border-radius: 10px; */
+  /* height: 250px; */
+  /* max-width: 90vw; Adjusted for better responsiveness */
+  box-sizing: border-box;
+  color: white; 
+  text-align: center; 
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px); /* Adjusted blur value using vw unit */
+  border-radius: 22px; /* Adjusted radius using vw unit */
+  padding: 5px; /* Adjusted padding using vw unit */
+  margin: 5px; /* Adjusted margin using vw unit */
+}
+
+h1, p {
+  color: #fff;
+}
+
+button {
+  padding: 8px 8px; /* Adjusted padding using vh and vw units */
+  font-size: 20px; /* Adjusted font size using vw unit */
+  margin: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+    max-width: none;
+    /* height:40vh; */
+  }
+}
