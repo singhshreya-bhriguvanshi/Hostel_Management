@@ -3,9 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Parent Login</title>
+    <link rel="stylesheet" href="/stylesheets/Login.css" />
   </head>
   <body>
-    <h1>parent</h1>
+    <div class="container">
+      <h2>Parent Login</h2>
+      <form action="#" method="post" id="loginForm">
+        <input
+          type="text"
+          name="student_name"
+          id="studentName"
+          placeholder="Student Name"
+          required
+        />
+        <input
+          type="text"
+          name="student_id"
+          id="studentId"
+          placeholder="Student ID"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+    <script src="/public/javascripts/studentLogin.js"></script>
   </body>
 </html>
